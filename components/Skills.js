@@ -7,7 +7,7 @@ const skills = [
   { name: "Windows Administration", level: 90, icon: <FaWindows /> },
   { name: "Linux Administration", level: 85, icon: <FaLinux /> },
   { name: "Network Troubleshooting (TCP/IP, DNS, DHCP)", level: 90, icon: <FaNetworkWired /> },
-  { name: "Firewalls & VPNs", level: 75, icon: <FaShieldAlt /> },
+  { name: "Firewalls & VPNs", level: 90, icon: <FaShieldAlt /> },
   { name: "CompTIA Security+ Knowledge", level: 90, icon: <FaShieldAlt /> },
   { name: "SIEM Tools (Splunk, ELK)", level: 70, icon: <FaServer /> },
   { name: "Incident Response & SOC Procedures", level: 85, icon: <FaShieldAlt /> },
@@ -56,3 +56,4 @@ export default function Skills() {
     </section>
   );
 }
+
