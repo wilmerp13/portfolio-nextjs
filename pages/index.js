@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import SkillRadar from '../components/SkillRadar'
 import Link from 'next/link'
-
-import Skills from "../components/Skills";
+import Skills from "../components/Skills"
 
 const skillsData = [
   { subject: 'Networking', A: 85 },
