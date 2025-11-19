@@ -10,7 +10,9 @@ export default function Navbar(){
 
       <nav className="space-x-4">
         <Link href="/#about"><a className="text-sm hover:underline">About</a></Link>
-        <Link href="/skills"><a className="text-sm hover:underline">Skills</a></Link>
+        
+        <a href="#skills" className="hover:text-blue-500">Skills</a>
+
         <Link href="/experience"><a className="text-sm hover:underline">Experience</a></Link>
         <Link href="/projects"><a className="text-sm hover:underline">Projects</a></Link>
         <Link href="/contact"><a className="text-sm hover:underline">Contact</a></Link>
