@@ -4,9 +4,6 @@ import Link from 'next/link'
 
 import Skills from "../components/Skills";
 
-export default function Home() {
-  return ()
-
 const skillsData = [
   { subject: 'Networking', A: 85 },
   { subject: 'Incident Response', A: 82 },
