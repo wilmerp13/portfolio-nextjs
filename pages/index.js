@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import SkillRadar from '../components/SkillRadar'
 import Link from 'next/link'
-import Skills from "../components/Skills"
+import Skills from "../components/Skills" // <-- Import your Skills component
+import CaseStudies from "../components/CaseStudies" // optional, if you want case studies
 
 const skillsData = [
   { subject: 'Networking', A: 85 },
@@ -12,9 +13,10 @@ const skillsData = [
   { subject: 'Content Filtering', A: 90 },
 ]
 
-export default function Home(){
+export default function Home() {
   return (
     <div className="max-w-6xl mx-auto px-6 pb-16">
+      {/* Hero Section */}
       <section id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
         <motion.div initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ duration:0.6 }}>
           <h2 className="text-4xl font-extrabold leading-tight">I build reliable systems and secure environments.</h2>
@@ -44,12 +46,19 @@ export default function Home(){
         </motion.div>
       </section>
 
-      <section id="skills" className="mt-12">
+      {/* Skill Radar Section */}
+      <section id="skill-radar" className="mt-12">
         <h3 className="text-lg font-semibold">Skill Radar</h3>
         <div className="mt-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
           <SkillRadar data={skillsData} />
         </div>
       </section>
+
+      {/* Full Skills Section */}
+      <Skills /> {/* <-- Add this to render your full skills section */}
+
+      {/* Optional: SOC Analyst Case Studies Section */}
+      <CaseStudies /> {/* <-- Add this if you want case studies to appear */}
     </div>
   )
 }
