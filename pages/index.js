@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Full Skills Section */}
-      <Skills /> {/* <-- Add this to render your full skills section */}
+      <Skills id="skills" className="mt-12" /> {/* <-- Add this to render your full skills section */}
 
       {/* Optional: SOC Analyst Case Studies Section */}
       <CaseStudies /> {/* <-- Add this if you want case studies to appear */}
