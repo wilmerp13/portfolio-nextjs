@@ -1,20 +1,24 @@
 import { useState } from 'react'
 
-export default function Contact(){
+export default function Contact() {
   const [form, setForm] = useState({ name:'', email:'', subject:'', message:'' })
   const [status, setStatus] = useState(null)
 
-  async function submit(e){
+  async function submit(e) {
     e.preventDefault()
     setStatus('sending')
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form)
-    })
-    const data = await res.json()
-    if(res.ok) setStatus('sent')
-    else setStatus(`error: ${data.error || 'unknown'}`)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form)
+      })
+      const data = await res.json()
+      if(res.ok) setStatus('sent')
+      else setStatus(`error: ${data.error || 'unknown'}`)
+    } catch(err) {
+      setStatus(`error: ${err.message}`)
+    }
   }
 
   return (
@@ -33,7 +37,7 @@ export default function Contact(){
       <div className="mt-4 text-sm">
         {status === 'sending' && <p>Sending…</p>}
         {status === 'sent' && <p className="text-green-600">Message sent — I will reply to your email soon.</p>}
-        {status && status.startswith('error') && <p className="text-red-600">{status}</p>}
+        {status && status.startsWith('error') && <p className="text-red-600">{status}</p>}
       </div>
     </div>
   )
