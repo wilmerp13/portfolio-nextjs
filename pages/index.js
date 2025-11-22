@@ -58,6 +58,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Experience />
+
       {/* Full Skills Section */}
       <Skills id="skills" className="mt-12" /> {/* <-- Add this to render your full skills section */}
 
