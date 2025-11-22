@@ -13,7 +13,9 @@ export default function Navbar(){
         
         <a href="#skills" className="hover:text-blue-500">Skills</a>
 
-        <Link href="/experience"><a className="text-sm hover:underline">Experience</a></Link>
+       // <Link href="/Experience"><a className="text-sm hover:underline">Experience</a></Link>
+        <Link href="#experience">Experience</Link>
+  
         <Link href="/projects"><a className="text-sm hover:underline">Projects</a></Link>
         <Link href="/contact"><a className="text-sm hover:underline">Contact</a></Link>
         <a
