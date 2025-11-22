@@ -3,6 +3,10 @@ import SkillRadar from '../components/SkillRadar'
 import Link from 'next/link'
 import Skills from "../components/Skills" // <-- Import your Skills component
 import CaseStudies from "../components/CaseStudies" // optional, if you want case studies
+import Experience from "../components/Experience"
+
+
+
 
 const skillsData = [
   { subject: 'Networking', A: 85 },
