@@ -21,7 +21,7 @@ export default function Home() {
       <section id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
         <motion.div initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ duration:0.6 }}>
           <h2 className="text-4xl font-extrabold leading-tight">I build reliable systems and secure environments.</h2>
-          <p className="mt-4 text-lg text-slate-700">Security-focused IT professional with hands-on experience in network security monitoring and incident investigation. I blend customer-centric support with technical rigor — ideal for SOC analyst roles.</p>
+          <p className="mt-4 text-lg text-slate-700">Security-focused IT professional with hands-on experience in network security monitoring and incident investigation. I blend customer-centric support with technical rigor, ideal for SOC analyst roles.</p>
 
           <div className="mt-6 flex gap-3">
             <Link href="/contact"><a className="rounded-md bg-slate-900 text-white px-4 py-2 font-medium shadow hover:opacity-95">Contact Me</a></Link>
