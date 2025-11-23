@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import SkillRadar from '../components/SkillRadar'
 import Link from 'next/link'
-import Skills from "../components/Skills" // <-- Import your Skills component
-import CaseStudies from "../components/CaseStudies" // optional, if you want case studies
+import Skills from "../components/Skills" // <-- 
+import CaseStudies from "../components/CaseStudies" // 
 import Experience from "../components/Experience" 
 
 const skillsData = [
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
 
           <ul className="mt-6 grid grid-cols-2 gap-2 text-sm text-slate-600">
-            <li><strong>Location:</strong> Augusta, GA</li>
+            <li><strong>Location:</strong> Atlanta, GA</li>
             <li><strong>Availability:</strong> Open to SOC Analyst roles</li>
             <li><strong>Languages:</strong> English & Spanish</li>
             <li><strong>Certs:</strong> CompTIA Security+, NASM CPT</li>
@@ -58,12 +58,12 @@ export default function Home() {
      
 
       {/* Full Skills Section */}
-      <Skills id="skills" className="mt-12" /> {/* <-- Add this to render your full skills section */}
+      <Skills id="skills" className="mt-12" /> {/* <--Skills */}
 
        <Experience />
 
-      {/* Optional: SOC Analyst Case Studies Section */}
-      <CaseStudies /> {/* <-- Add this if you want case studies to appear */}
+      {/* SOC Analyst Case Studies Section */}
+      <CaseStudies /> {/* <-- Case studies */}
     </div>
   )
 }
