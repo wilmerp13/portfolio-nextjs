@@ -7,7 +7,7 @@ export default function Experience() {
       icon: Shield,
       role: "Technical Support & Network Security Specialist",
       company: "Netspark Ltd",
-      period: "2023 – 2024",
+      period: "2021 – 2024",
       description:
         "Performed VPN traffic inspection, content filtering validation, secure policy enforcement, and URL security analysis. Investigated logs, validated incidents, and collaborated with engineering teams to ensure effective filtering and endpoint protection.",
       tech: [
@@ -123,3 +123,4 @@ export default function Experience() {
     </section>
   );
 }
+
