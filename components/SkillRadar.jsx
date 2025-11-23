@@ -3,7 +3,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'r
 export default function SkillRadar({ data }){
   return (
     <div className="flex justify-center">
-      <RadarChart cx={150} cy={120} outerRadius={110} width={330} height={260} data={data}>
+      <RadarChart cx={150} cy={120} outerRadius={80} width={280} height={260} data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />
         <PolarRadiusAxis angle={30} domain={[0, 100]} />
